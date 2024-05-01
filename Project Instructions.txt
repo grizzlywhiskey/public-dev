@@ -1,0 +1,44 @@
+# Google Drive access - https://drive.google.com/drive/folders/1e2_HNDX6dgwd4N3cIGUnxmp4yXocT27F?usp=sharing 
+There is a private Github Repo where I work from, I can provide access here too.
+
+# Avrae Aliasing Documentation - https://avrae.readthedocs.io/en/latest/aliasing/api.html#draconic 
+This contains most of the info on how Draconic coding works, and its differences between it and Python (for example, many commands of Python such as print, import etc do not work in Draconic.
+
+# Discord Testing Server - https://discord.gg/buNa3EKT 
+You are welcome to join the discord server here, which will provide the environment for testing and conversation on the alias functions. 
+
+
+## Statement of Needs:
+I run a Dungeons and Dragons 5e server on Discord.  As part of that, there is a python bot that helps run automation through discord for the mechanics of the game, which can be used to also create custom actions and automation.  Part of those can be things like custom spells, classes, or activities.  I have been writing and developing a series of “Downtime Activities” that players can engage with on the server - these use details like player or character information, statistics etc and then store them across CVARS (Character Variables), UVARS (user variables), and SVARS (Server Variables).  Global Variables are stored in GVARS.   
+While I can continue to work on these aliases myself, I have recently been given some of the original alias content that I was designing these off, and some of these are far better written than mine - I would like to use the structure of what these use, but the language comprehension is a bit beyond me to quickly and easily update mine.  My needs are:
+
+  1. Review my current code for the Research alias, looking at how I have split the process across research start, research identify and research catalogue.  All downtime activities are currently working off a global timer that resets at UTC 00:00, and has a limit of 5 uses per IRL day.   I have been using cvars of _dt_limit_ and _dt_last_ along with variables such as _pl_ranks_ to track a characters progress. 
+  2. Review the new code for the hunt alias, looking at the different defined functions, how I can adapt these to my current alias.
+  3. Establish a new version of the utils module, this contains definitions that can be called on from any alias.  I’d like to have these set up so that I can then use the same functions across all intended aliases, which I plan to do for hunt, mine, forage, craft, merchant, fish, research, cook. 
+  4. Update the hunt alias to then take the formatting and style of what I am using for my server. 
+
+Additional Project
+Update my current Research alias to test the integration of the coding style from the hunt alias, and ensure that the module is working.  Also take the arguments from hunt for advantage and apply those random chances to research.  There are a few other steps in here too. 
+
+I can provide a testing space in Discord for these, and can essentially provide back and forth chat and support to help with development and troubleshooting as we go - I just need help doing this, rather than sitting by myself trying to figure it all out! I can also provide editing access into the Avrae dashboard and Github Repo.
+
+GVAR Locations:
+https://avrae.io/dashboard/gvars?lookup={GVAR BELOW}
+
+    "08692d28-00ab-4481-9258-e6b3d02605f5": "Sobros Anti-Feats",
+    "1fb532a7-e22b-4f89-8914-de598d443876": "Current Foraging Downtime",
+    "2042b2e0-ce9e-47b4-8365-fe3966900e34": "Character Global Rankings",
+    "3b1ad3aa-c661-43f6-aa49-8dbcac6896b9": "Wandering Merchant Roll Table",
+    "3d1438ce-811f-401b-a0e5-ddf9c64a44b3": "Current Achievements",
+    "4f8835ad-501c-4a32-a615-91b2dc025bde": "Cost Directory #1",
+    "59cce2e2-4fb6-44d3-8933-b47d0f11a702": "New Wandering Merchant Generator",
+    "5bdfe910-a9dc-4f4e-93da-a3181a769c96": "Character Renown Values",
+    "6bdae9e9-be95-4c7d-9cc5-636c8a2e27df": "Fishing Trinket Table",
+    "7f7c548d-752d-492b-ad24-1e4053339492": "Cost Directory #2",
+    "8186b3df-1078-4fc5-bd61-8f9d0e9ad6b4": "New Wandering Merchant Generator #2",
+    "92bd1280-d51c-44f9-adfd-6030fdb53876": "NPC Alias Entries",
+    "e4c4c88d-353b-4801-851b-9d760b3ad399": "Narrators Emporium Random Reward",
+    "92ff637a-0eb3-4c63-8d2f-55b836824644": "Global Faction Categories",
+    "df0488a0-a533-4608-b8b8-fe14e1861de9": "Research Downtime",
+    "fbd7d3ea-10e5-4e34-b8c2-b70c44ebfa7d": "Rank Tiers",
+
